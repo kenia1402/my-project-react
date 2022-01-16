@@ -1,0 +1,16 @@
+.homeContainer {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-image: url('../../../public/assets/home-background.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeContainer__title {
+  color: rgb(207, 207, 207);
+  font-family: 'Roboto';
+  font-size: 38px;
+}

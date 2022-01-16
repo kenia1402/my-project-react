@@ -1,0 +1,73 @@
+.servicesContainer {
+  padding: 40px 14px;
+}
+
+.servicesContainer__top {
+  padding: 10px 30px;
+}
+
+.servicesContainer__top__title {
+  color: rebeccapurple;
+}
+
+.servicesContainer__top__description {
+  font-style: italic;
+  font-size: 14px;
+  color: #666;
+  width: 80%;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  width: 400px;
+  margin: 15px 0;
+}
+
+.cardInfos {
+  width: 70%;
+}
+
+.cardInfos__title {
+  margin: 8px 0;
+  font-family: "Roboto";
+  color:rgb(69, 69, 129);
+}
+
+.cardInfos__description {
+  font-style: italic;
+  color: #777;
+}
+
+.card svg {
+  background-color: rgb(124, 124, 252);
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: 3px;
+}
+
+.servicesContainer__cards {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 680px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+  }
+
+  .cardInfos__title,
+  .cardInfos__description {
+    text-align: center;
+  }
+
+  .servicesContainer__cards {
+    gap: 0px;
+  }
+}

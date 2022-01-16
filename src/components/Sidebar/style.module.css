@@ -1,0 +1,132 @@
+.menuButton {
+  padding: 15px;
+  cursor: pointer;
+  color: #999;
+}
+
+.menuButton,
+.sideBar__container {
+  position: absolute;
+  z-index: 999;
+
+  transition: all 0.1s;
+}
+
+.sideBar__container .menuButton {
+  margin-top: 80px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: 'Roboto';
+  width: 90%;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.sideBar__container .menuButton:hover {
+  color: #777;
+  cursor: pointer;
+  background-color: #222;
+}
+
+.sideBar__container {
+  background-color: #111;
+  height: 99vh;
+  border-radius: 12px;
+  margin: 6px;
+}
+
+.sideBar__container {
+  width: 240px;
+}
+
+.sideBar__profileImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 6px solid #444;
+}
+
+.sideBar__profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding: 4px;
+}
+
+.sideBar__profileSeparator {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 8px;
+}
+
+.sideBar__profileName {
+  color: #fff;
+  font-size: 19px;
+  margin-top: 10px;
+  max-width: 200px;
+}
+
+.sideBar__profileSocialMedias {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.sideBar__profileSocialMedias svg:hover {
+  color:rgb(212, 212, 212);
+  cursor: pointer;
+}
+
+.sideBar__profileSocialMedias svg {
+  background-color: #444;
+  border: 2px solid #222;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+}
+
+.sideBar__pageLink {
+  padding: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+  font-family: 'Roboto';
+  width: 90%;
+  border-radius: 8px;
+}
+
+.sideBar__pageLink:hover {
+  cursor: pointer;
+  background-color: #222;
+  color: #fff;
+}
+
+.sideBar__pageLink.active:hover {
+  color:rgb(91, 91, 206)
+}
+
+.sideBar__pageLink.active {
+  color: rgb(107, 107, 240);
+}
+
+.sideBar__pageLink svg {
+  height: 28px;
+}
+
+@media (max-width: 680px) {
+  .sideBar__container {
+    width: 80%;
+  }
+
+  .sideBar__container .menuButton {
+    margin-top: 60px;
+  }
+}
+

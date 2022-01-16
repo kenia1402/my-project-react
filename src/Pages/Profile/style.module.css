@@ -1,0 +1,135 @@
+.profileContainer {
+  padding: 25px 90px 0 90px;
+  font-family: 'Roboto';
+  width: 95%;
+}
+
+.profileContainerTop__title,
+.profileContainerBottom__title {
+  color: rgb(52, 40, 117);
+  padding: 10px 5px;
+}
+
+.profileContainerTop__description,
+.profileContainerMiddle__description {
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #777;
+  padding: 5px;
+}
+
+.profileContainerTop {
+  margin-bottom: 20px;
+}
+
+.profileContainerMiddle {
+  display: flex;
+  gap: 20px;
+}
+
+.profileContainerMiddle__image {
+  height: 350px;
+  width: 300px;
+  border: 4px solid rgb(62, 49, 136);
+  border-radius: 10px;
+}
+
+.profileContainerMiddle__detailsTitle {
+  color: #835afb;
+}
+
+.profileContainerMiddle__detailsDescription {
+  font-weight: 500;
+  color: #333;
+}
+
+.profileContainerMiddle__infos {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profileContainerMiddle__infos > span {
+  display: flex;
+  width: 800px;
+}
+
+.profileContainerMiddle__infos p {
+  display: flex;
+  gap: 4px;
+  font-size: 15px;
+  padding: 0 10px;
+}
+
+.profileContainerMiddle__description {
+  width: 80%;
+  font-size: 17px !important;
+}
+
+.profileContainerMiddle__infos p > span > svg {
+  color: rgb(92, 92, 255);
+}
+
+.profileContainerBottom__description {
+  padding: 0 8px;
+}
+
+.profileContainerMiddle__infos p > span {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.profileContainerMiddle__infos > span {
+  display: flex;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.profileContainerMiddle__infos p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 680px) {
+  .profileContainer {
+    padding: 40px 10px;
+  }
+
+  .profileContainerTop__description,
+.profileContainerMiddle__description {
+  width: 100%;
+}
+
+  .profileContainerMiddle {
+    flex-wrap: wrap;
+  }
+
+  .profileContainerMiddle__profileDescription {
+    display: flex;
+  }
+
+  .profileContainerMiddle__details {
+    width: 210px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: 1px solid #222;
+  }
+
+  .profileContainerMiddle__image {
+    height: 200px;
+    width: 120px;
+  }
+
+  .profileContainerMiddle__infos > span {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 5px 0;
+  }
+
+}
